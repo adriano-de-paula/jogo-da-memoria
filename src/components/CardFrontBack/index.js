@@ -9,14 +9,14 @@ window.cardFrontBack.handleClick = (event) => {
     $cardFrontBack.classList.toggle('-active');
  }
 
-function CardFrontBack() { 
+function CardFrontBack(icon, altIcon) { 
     return /*html*/ `
         <article class="card-front-back" onClick="cardFrontBack.handleClick(event)">
             <div class="card -front">
                 ${CardGame()}
             </div>
             <div class="card -back">
-                ${CardGame("tanjirou-pixel", "Tanjirou")}
+                ${CardGame(icon, altIcon)}
             </div>
         </article>
     `;
